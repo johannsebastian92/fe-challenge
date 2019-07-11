@@ -1,0 +1,385 @@
+body {
+  background-color: white;
+  font-family: "Roboto", Helvetica, Arial, serif;
+
+}
+
+.BusyBus {
+  width: 100%;
+  min-width: 360px;
+  height: 100vh;
+  min-height: 640px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.status-bar {
+  background-color: rgba(255,255,255,0.0);
+  top: 0px;
+  height: 24px;
+  width: 360px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+}
+
+.statusbarbg {
+  background-color: rgba(28, 58, 169, 1.0);
+  top: 0px;
+  height: 24px;
+  width: 360px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+}
+
+.nav-bar {
+  height: 60px;
+  width: 360px;
+  background-color: #334EB5
+}
+
+.bottomnav {
+  background-color: rgba(0, 0, 0, 1.0);
+  top: 0px;
+  height: 50px;
+  width: 360px;
+  position: absolute;
+  top: 590px;
+  margin: 0;
+  left: 0px;
+}
+
+.content { /* Modifies wifi/battery/time icons*/
+  position: relative;
+  left: 255px;
+  top: 5px;
+}
+
+.BusyBusTitle {
+  background-color: rgba(255,255,255,0.0);
+    position: absolute;
+    top: 35px;
+    left: 67px;
+    height: auto;
+    width: 95px;
+    margin: 0;
+    transform: rotate(0deg);
+    font-family: "Roboto", Helvetica, Arial, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22.0px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: left;
+    letter-spacing: 0.68px;
+    line-height: 25.0px;
+}
+
+.nav-content {
+  top: 35px; /*This modifies the "moredots" image*/
+  left: 320px;
+  height: 18px;
+  width: 5px;
+  position: absolute;
+  margin: 0;
+}
+
+.span1 { /*To adjust the "Washington & State title"*/
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15.0px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 2px;
+  position: absolute; /*This adjusted the positon of the "Washington & State title"*/
+  top: 110px;
+  left: 90px;
+}
+
+.span2 { /*To adjust the "Bus Stop" title*/
+  font-family: "Roboto", Helvetica, Arial, serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: justify;
+  position: relative; /*This adjusted the position*/
+  left: 90px;
+  top: 50px;
+}
+
+.directions { /*Adjusted the Directions button*/
+  position: absolute;
+  Top: 98px;
+  left: 285px;
+}
+
+.Search-icon {
+  position: relative;
+  top: 2px;
+  left: 285px;
+}
+
+.Back-arrow {
+  position: relative;
+  top: 21px;
+  left: 16px;
+}
+
+.bottom-nav-button {
+  position: relative;
+  top: 6px;
+  left: 55px;
+}
+
+.bottom-nav-home {
+  position: relative;
+  top: 7px;
+  left: 140px;
+}
+
+.bottom-nav-square {
+  position: relative;
+  top: 5px;
+  left: 220px;
+}
+
+.busicon {
+  position: relative;
+  top: 11px;
+  left: 16px;
+}
+
+.important-info {
+    background-color: rgba(255,255,255,0.0);
+    top: 25px;
+    height: 24px;
+    width: 275px;
+    position: relative;
+    margin: 0;
+    left: 29px;
+    font-family: "Roboto", Helvetica, Arial, serif;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 15.0px;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: left;
+    line-height: 24.0px;
+    display:block;
+}
+
+.Line {
+  position: relative;
+  bottom: 2.5px;
+}
+
+.Destination {
+  position: relative;
+  left: 90px;
+  bottom: 26px;
+}
+
+.Frequency {
+  position: relative;
+  left: 217px;
+  bottom: 50px
+}
+
+.Eastbound-info {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12.0px;
+  color: rgba(18, 17, 17, 1.0);
+  text-align: left;
+  line-height: 20.0px;
+}
+
+/* Eastbound parts*/
+.Eastbound {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  font-weight: bold;
+}
+
+.line-number { /*Line number for Eastbound*/
+  position: relative;
+  left: 35px;
+  top: 26px;
+}
+
+.Every20 { /*Frequency for Eastbound*/
+  position: relative;
+  left: 242px;
+  top: -53px;
+}
+
+.Randolph { /*Destination for Eastbound*/
+  position: relative;
+  left: 105px;
+  top: -14px;
+}
+
+.one { /*Line break between East and Northbound*/
+  width: 90%;
+  position: relative;
+  top: -50px;
+}
+
+/*Northbound part*/
+.Northbound-info {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12.0px;
+  color: rgba(18, 17, 17, 1.0);
+  text-align: left;
+  line-height: 20.0px;
+}
+
+.Northbound { /* Edit northbound title*/
+  font-weight: bold;
+  position: relative;
+  top: -50px;
+  left: 25px;
+}
+
+.line-number-2 {
+  position: relative;
+    top: -67px;
+    left: 35px;
+}
+
+.Devon {
+  position: relative;
+  left: 105px;
+  top: -45px;
+}
+
+.Every16 {
+  position: relative;
+  left: 242px;
+  top: -85px;
+}
+
+.two { /* Line break between East and Northbound */
+  width: 90%;
+  position: relative;
+  bottom: 80px;
+}
+
+/*Southbound Part*/
+.Southbound-info {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12.0px;
+  color: rgba(18, 17, 17, 1.0);
+  text-align: left;
+  line-height: 20.0px;
+}
+
+.Southbound {
+  font-weight: bold;
+  position: relative;
+  left: 25px;
+  bottom: 80px;
+}
+
+.Stony {
+  position: relative;
+  left: 105px;
+  bottom: 75px;
+}
+
+.Every15 {
+  position: relative;
+  left: 242px;
+  bottom: 115px;
+}
+
+.J14 {
+  position: relative;
+  left: 35px;
+  bottom: 154px;
+}
+
+.three { /*Line break between Southbound and reroute*/
+  width: 90%;
+  position: relative;
+  bottom: 150px;
+}
+
+
+/*Reroute part*/
+.Reroute-info {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12.0px;
+  color: rgba(18, 17, 17, 1.0);
+  text-align: left;
+  line-height: 20.0px;
+  position: relative;
+  Bottom: 70px
+}
+
+.Reroute {
+  font-weight: bold;
+  position: relative;
+  left: 25px;
+  bottom: 80px;
+}
+
+.sixX {
+  position: relative;
+  left: 35px;
+  bottom: 80px;
+}
+
+.Jackson {
+  position: relative;
+  left: 105px;
+  bottom: 100px;
+}
+
+.Not {
+  position: relative;
+  left: 260px;
+  bottom: 118px;
+}
+
+.four { /*Line break between not applicable and out of service*/
+  width: 90%;
+  position: relative;
+  bottom: 115px;
+}
+
+
+/*Out of Service part*/
+.OOS {
+  position: relative;
+  bottom: 120px
+}
+
+.Out-of-Service {
+  font-weight:bold;
+  position: relative;
+  left: 25px;
+  top: 5px;
+}
+
+.lineout {
+  position: relative;
+  left: 35px;
+  top: 10px;
+}
+
+.Cottage {
+  position: relative;
+  left: 105px;
+  bottom: 50px;
+}
+
+.Resumes {
+  position: relative;
+  left: 235px;
+  bottom: 110px;
+}
